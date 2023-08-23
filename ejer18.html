@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        
+let valores = [];
+let num=0,maximo=0,minimo=0,acum=0;
+let texto;
+let promedio=0;
+
+for (var i = 0; i < 20; i++) {
+  num = parseInt(prompt("Ingrese 20 valores" + (i + 1) + ": "));
+  valores.push(num);
+  acum += valores[i];
+}
+promedio = acum / 20;
+maximo= Math.max(...valores);
+minimo = Math.min(...valores);
+
+alert( "El vector de numeros: " + valores.join(", ") + "\n"
++ "El valor maximo es: " + maximo + "\n"
++"El valor minimo es: " + minimo + "\n"+
+"Promedio: " + promedio);
+
+      
+
+      
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

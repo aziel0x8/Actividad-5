@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        let precio = Number(prompt("Ingresa el precio"));
+        let cantidad = Number(prompt("Ingresa el cantidad"));
+        let formula;
+
+        if (precio>0 && cantidad>0) {
+
+            if (cantidad ===3) {
+                formula =((cantidad*precio)-((precio*cantidad)*0.03));
+
+                alert("El precio con el descuento de 3% por los 3 libros es: "+formula);
+            }
+            else if (cantidad>3 || cantidad<=10) {
+                formula =((cantidad*precio)-((precio*cantidad)*0.05));
+                alert("El precio con el descuento de 5% por los 3 libros es: "+formula);
+            }
+            else if (cantidad>10) {
+                formula =((cantidad*precio)-((precio*cantidad)*0.10));
+                alert("El precio con el descuento de 10% por los 3 libros es: "+formula);
+                
+            }
+        }
+
+      
+
+      
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

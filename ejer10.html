@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //falta validar
+        let edad = Number(prompt("Ingresa tu edad"));
+
+        if (edad >0 || edad<=110) {
+
+            if (edad<=12) {
+                alert("Eres un niño");
+            }
+            else if (edad >12 && edad <18) {
+                alert("Eres un adolescente");
+            }
+            else if (edad >=18 && edad <60) {
+                alert("Eres un adulto");
+                
+            }else if (edad>=60 && edad<=100) {
+                alert("Eres de la tercera edad");
+            }
+        }else{
+            alert("debes de ingresar una edad correcta");
+        }
+
+      
+
+      
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

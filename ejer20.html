@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        
+let valores = [];
+let num=0,acum=0;
+let texto;
+
+
+for (var i = 0; i < 5; i++) {
+  num = parseInt(prompt("Ingrese los 5 valores: "+(i + 1) + ": "));
+
+        if (num %2===0) {
+            console.log(num);
+            valores.push(num);
+        }
+}
+alert("Los datos pares en el vector son "+valores.join(", "));
+console.log(valores);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        let dinero = Number(prompt("Ingresa el precio"));
+       formula=0;
+
+        if (dinero >0 ) {
+
+            if (dinero>=0.00 && dinero<=500.00) {
+                alert("El precio es de: "+formula);
+            }
+            else if (dinero>=500.01 && dinero<=1000.00) {
+                formula =(dinero-(dinero*0.05));
+                alert("El precio  con el 5% de descuento es de: "+formula);
+            }
+            else if (dinero>=1000.01 && dinero<= 7000.00) {
+                formula =(dinero-(dinero*0.11));
+                alert("El precio  con el 11% de descuento es de: "+formula);
+                
+            }else if (dinero>=7000.01 && dinero<= 15000.00) {
+                formula =(dinero-(dinero*0.18));
+                alert("El precio  con el 18% de descuento es de: "+formula);
+            }else if (dinero>=15000.01) {
+                formula =(dinero-(dinero*0.25));
+                alert("El precio  con el 25% de descuento es de: "+formula);
+                
+            }
+        }
+
+      
+
+      
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

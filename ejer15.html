@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // En un caso hipotetico por que no 
+        // me dieron el valor por hora
+
+        let valorPorHora=1.50, formula=0,bruto=0;
+        let horas = Number(prompt("Ingresa la cantidad de horas"));
+
+
+        if (horas>0) {
+            if (horas >=40) {
+                bruto =horas*valorPorHora;
+                console.log(bruto);
+                formula =bruto-(bruto*0.0945);
+                alert("Tu salario es 1: "+formula);
+            }else{
+                bruto =horas*valorPorHora;
+                formula =bruto-(bruto*0.15);
+                alert("Tu salario es: 2"+formula);
+            }
+        }
+       
+      
+
+      
+
+      
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

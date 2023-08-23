@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        
+let valores = [];
+let num,acum=0;
+let texto;
+let promedio=0;
+
+for (var i = 0; i < 10; i++) {
+  num = parseInt(prompt("Ingrese los 10 valores" + (i + 1) + ": "));
+  valores.push(num);
+  acum += valores[i];
+}
+
+console.log(valores);
+alert("La suma de vector es " + acum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
